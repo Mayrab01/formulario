@@ -1,0 +1,84 @@
+.inicio{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    height: 100vh;
+}
+.izq{ 
+   background-color: white;
+   flex-direction: column;
+   justify-content: center; 
+}
+.der{ 
+    background-image: url(fondo.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;  
+}
+.form_title {
+    color: black; 
+}
+.formul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 25px;
+}
+.formul label{
+    color: #00AAE4;
+}
+.boton input{
+    display: block;
+    width: 30%;
+    color: white;
+    background:#00AAE4;
+    border-radius: .3em;
+    width: 250px;
+    font-size: 20px;
+    margin: 20px 300px;
+}
+.datos{
+    max-height: 380px;
+    overflow: auto;
+}
+.detalles .formul{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.izq form .detalles{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .detalles .formul{
+    width: calc(100% / 2 -20px);
+    margin-bottom: 10%;
+}
+.detalles .formul .nombre{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.detalles input{
+    border-radius: .3em;
+    width: 250px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .der{
+        display: none;
+    }
+    .izq{
+        width: 100%;
+    }
+
+    .der form {
+        width: 95%;
+        padding: 0 1em;
+    }
+} 
+
+
